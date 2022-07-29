@@ -3,15 +3,8 @@
 
 #include "framework.h"
 #include "TestSample.h"
-
-
-// 내보낸 변수의 예제입니다.
-TESTSAMPLE_API int nTestSample = 0;
-
-// 내보낸 함수의 예제입니다.
-TESTSAMPLE_API int fnTestSample(void) {
-    return 0;
-}
+#include <chrono>
+#include <thread>
 
 int Add(int a, int b) {
     return a + b;
@@ -41,7 +34,7 @@ bool Odd(int a) {
     return (mod == 1 || mod == -1);
 }
 
-// 내보낸 클래스의 생성자입니다.
-CTestSample::CTestSample() {
-    return;
+int CalcBusy(int sleepMs) {
+    std::this_thread::sleep_for(std::chrono::milliseconds(sleepMs));
+    return 0;
 }

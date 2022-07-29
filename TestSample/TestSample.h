@@ -10,16 +10,6 @@
 #define TESTSAMPLE_API __declspec(dllimport)
 #endif
 
-// 이 클래스는 dll에서 내보낸 것입니다.
-class TESTSAMPLE_API CTestSample {
-public:
-	CTestSample(void);
-	// TODO: 여기에 메서드를 추가합니다.
-};
-
-extern TESTSAMPLE_API int nTestSample;
-
-TESTSAMPLE_API int fnTestSample(void);
 TESTSAMPLE_API int Add(int a, int b);
 TESTSAMPLE_API int Add_Bug(int a, int b);
 TESTSAMPLE_API int Sub(int a, int b);
@@ -27,3 +17,4 @@ TESTSAMPLE_API int Mul(int a, int b);
 TESTSAMPLE_API int Div(int a, int b);
 TESTSAMPLE_API bool Even(int a);
 TESTSAMPLE_API bool Odd(int a);
+TESTSAMPLE_API int CalcBusy(int calcCount);

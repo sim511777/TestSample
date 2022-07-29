@@ -40,3 +40,17 @@ TEST(TestSample, Odd) {
     EXPECT_TRUE(Odd(5));
     EXPECT_TRUE(Odd(-1));
 }
+TEST(TestSample, CalcBusy) {
+    auto result0 = CalcBusy(300);
+    EXPECT_EQ(result0, 0);
+}
+TEST(TestSample, CalcBusy_Time) {
+    auto t0 = clock();
+    auto result0 = CalcBusy(300);
+    auto t1 = clock();
+    EXPECT_LE((t1 - t0), 320);
+}
+
+TEST(TestSample, Print) {
+    std::cout << "hello ´ëÇÑ¹Î±¹!" << std::endl;
+}

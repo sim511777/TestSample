@@ -6,6 +6,9 @@
 #include <chrono>
 #include <thread>
 
+namespace thread = std::this_thread;
+namespace chrono = std::chrono;
+
 int Add(int a, int b) {
     return a + b;
 }
@@ -35,6 +38,6 @@ bool Odd(int a) {
 }
 
 int CalcBusy(int sleepMs) {
-    std::this_thread::sleep_for(std::chrono::milliseconds(sleepMs));
+    thread::sleep_for(chrono::milliseconds(sleepMs));
     return 0;
 }

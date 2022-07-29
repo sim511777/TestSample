@@ -37,7 +37,8 @@ bool Even(int a) {
 }
 
 bool Odd(int a) {
-    return (a % 2 == 1);
+    auto mod = a % 2;
+    return (mod == 1 || mod == -1);
 }
 
 // 내보낸 클래스의 생성자입니다.

@@ -12,6 +12,11 @@ TEST(TestSample, Add) {
     EXPECT_EQ(Add(3, 4), 7);
 }
 
+TEST(TestSample, Add_Bug) {
+    EXPECT_EQ(Add_Bug(1, 1), 2);
+    EXPECT_EQ(Add_Bug(3, 4), 7);
+}
+
 TEST(TestSample, Sub) {
     EXPECT_EQ(Sub(1, 1), 0);
     EXPECT_EQ(Sub(3, 4), -1);

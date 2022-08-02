@@ -14,7 +14,7 @@ int Add(int a, int b) {
 }
 
 int Add_Bug(int a, int b) {
-    return a + b + 1;
+    return a + b;
 }
 
 int Sub(int a, int b) {

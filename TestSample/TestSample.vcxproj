@@ -110,10 +110,10 @@ echo %h% 복사
 copy $(TargetName).h %h%
 
 echo %lib% 복사
-copy $(OutDir)$(TargetName).lib %lib%
+copy "$(OutDir)$(TargetName).lib" %lib%
 
 echo %dll% 복사
-copy $(OutDir)$(TargetName).dll %dll%
+copy "$(OutDir)$(TargetName).dll" %dll%
 echo ==== Post-Build Event - end ====</Command>
     </PostBuildEvent>
     <PreBuildEvent>
@@ -159,10 +159,10 @@ echo %h% 복사
 copy $(TargetName).h %h%
 
 echo %lib% 복사
-copy $(OutDir)$(TargetName).lib %lib%
+copy "$(OutDir)$(TargetName).lib" %lib%
 
 echo %dll% 복사
-copy $(OutDir)$(TargetName).dll %dll%
+copy "$(OutDir)$(TargetName).dll" %dll%
 echo ==== Post-Build Event - end ====</Command>
     </PostBuildEvent>
     <PreBuildEvent>
@@ -204,10 +204,10 @@ echo %h% 복사
 copy $(TargetName).h %h%
 
 echo %lib% 복사
-copy $(OutDir)$(TargetName).lib %lib%
+copy "$(OutDir)$(TargetName).lib" %lib%
 
 echo %dll% 복사
-copy $(OutDir)$(TargetName).dll %dll%
+copy "$(OutDir)$(TargetName).dll" %dll%
 echo ==== Post-Build Event - end ====</Command>
     </PostBuildEvent>
     <PreBuildEvent>
@@ -253,10 +253,10 @@ echo %h% 복사
 copy $(TargetName).h %h%
 
 echo %lib% 복사
-copy $(OutDir)$(TargetName).lib %lib%
+copy "$(OutDir)$(TargetName).lib" %lib%
 
 echo %dll% 복사
-copy $(OutDir)$(TargetName).dll %dll%
+copy "$(OutDir)$(TargetName).dll" %dll%
 echo ==== Post-Build Event - end ====</Command>
     </PostBuildEvent>
     <PreBuildEvent>
